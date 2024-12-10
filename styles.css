@@ -18,7 +18,7 @@ header {
     background: #fff;
     border-bottom: 2px solid #ccc;
     padding: 1rem;
-    margin-bottom: 60px;
+    margin-bottom: 32px;
     display: flex;
     justify-content: space-between;   
     align-items: center;
@@ -64,7 +64,7 @@ header nav ul li a:hover {
 .about-section {
     background: #fff;
     padding: 2rem;
-    margin-bottom: 60px;
+    margin-bottom: 32px;
     text-align: center;
 }
 
@@ -81,7 +81,7 @@ header nav ul li a:hover {
 .team-section {
     background: #ffffff;
     padding: 2rem;
-    margin-bottom: 60px;
+    margin-bottom: 32px;
 }
 
 .team-section h2 {
@@ -128,7 +128,7 @@ header nav ul li a:hover {
 .trust-section {
     background: #fff;
     padding: 2rem;
-    margin-bottom: 60px;
+    margin-bottom: 32px;
 }
 
 .trust-section h2 {
@@ -275,11 +275,6 @@ footer p {
         justify-content: center;
         gap: 0.1rem;
         text-wrap: nowrap;
-    }
-
-    .about-section p, 
-    .trust-section .faq summary {
-        font-size: 1rem;
     }
 
     .contact-section .social-icons {
