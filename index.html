@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RCS - Russian Clothes Store</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,10 +13,11 @@
         <div class="container">
             <div class="logo">
                 <img src="logos/logo.jpg" alt="RCS">
-                <h1>Russian Clothes Store</h1>
+                <h1>Russian Clothes Style</h1>
             </div>
             <nav>
                 <ul>
+                    <li><a href="#about">Коллекция</a></li>
                     <li><a href="#about">О проекте</a></li>
                     <li><a href="#team">О команде</a></li>
                     <li><a href="#trust">Доверие</a></li>
@@ -24,54 +27,122 @@
         </div>
     </header>
     <main>
+        <section id="welcome" class="welcome-section">
+            <div class="container">
+                <h1><span class="rus">Russian</span> <span class="clo">Clothes</span> <span class="sty">Style</span><hr></h1>
+                <p>ИДЕИ ВОПЛОЩАЮТСЯ ЗДЕСЬ</p>
+            </div>
+        </section>
         <section id="about" class="about-section">
             <div class="container">
-                <h2>О проекте</h2>
-                <p>RCS - это место, где сочетаются традиции и современность. Мы создаем одежду, вдохновленную русским наследием, но адаптированную под актуальные тренды.</p>
+                <h2>О проекте Russian Clothes Style (RCS)</h2>
+                <p>Russian Clothes Style (RCS) — это больше, чем просто магазин одежды. Мы создаём уникальное пространство, где молодые люди и девушки находят качественную и доступную одежду, отражающую русский стиль и дух. Наш проект направлен на поддержку локальных брендов, которые воплощают в себе лучшие традиции и новаторские идеи отечественной моды.</p>
+                <div class="about-description-grid">
+                    <div class="about-description">
+                        <img src="icons/goal-color.png" alt="Our goal" class="bd-none">
+                        <p>Объединяем перспективные российские бренды и представляем их продукцию широкой аудитории</p>
+                    </div>
+                    <div class="about-description">
+                        <img src="icons/nature-color.png" alt="Our goal">
+                        <p>Простые линии, комфортные материалы и продуманный дизайн делают её выбором для активных и стильных людей</p>
+                    </div>
+                    <div class="about-description">
+                        <img src="icons/badge-color.png" alt="Our goal">
+                        <p>Простые линии, комфортные материалы и продуманный дизайн делают её выбором для активных и стильных людей</p>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="team" class="team-section">
             <div class="container">
-                <h2>О команде</h2>
-                <p class="description">Наша команда - это дизайнеры, маркетологи и мастера своего дела, объединенные общей целью.</p>
+                <h2>Стань частью команды</h2>
                 <div class="team-grid">
+                    <div class="description">
+                        <p>Мы – команда единомышленников, объединённых общей целью: помогать друг другу в реализации идей и развитии в разных направлениях. Наш проект – это пространство для творчества, роста и совместного достижения целей.</p>
+                        <p>Каждый из нас – не просто участник, а настоящий член дружной "семьи". Мы строим отношения на взаимопомощи, поддержке и доверии, чтобы создать максимально комфортные условия для работы и вдохновения.</p>
+                        <p>Здесь нет жестких рамок и ограничений: если у вас есть идея, выходящая за рамки вашей сферы, – это только повод для объединения усилий. Вместе мы сильнее, и вместе мы можем больше.</p>
+                    </div>
+                    <div class="quote-form">
+                        <h3>Присоединяйся к команде!</h3>
+                        <input placeholder="Полное имя" type="text"/>
+                        <input placeholder="Email" type="email"/>
+                        <input placeholder="Телефон" type="text"/>
+                        <button>Отправить</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="team-members" class="team-members-section">
+            <div class="container">
+                <h2>Наша команда</h2>
+                <div class="team-members-grid">
                     <div class="team-member">
-                        <img src="team/FighterRat.jpg" alt="Team Member 1">
-                        <h3>Иван Крутой</h3>
-                        <p>Ну самый крутой короче, не обсуждается</p>
+                        <img src="team/Kirill.jpg" alt="Team Member 1">
+                        <h3>Кирилл</h3>
+                        <p>SMM-менеджер</p>
                     </div>
                     <div class="team-member">
-                        <img src="team/WizardRat.jpg" alt="Team Member 2">
-                        <h3>Мария Околозаборная</h3>
-                        <p>Бухгалтер крыса</p>
+                        <img src="team/Artem.png" alt="Team Member 2">
+                        <h3>Артём</h3>
+                        <p>Ведущий разработчик</p>
                     </div>
                     <div class="team-member">
-                        <img src="team/PaladinRat.jpg" alt="Team Member 3">
-                        <h3>Петр Котлеткин</h3>
-                        <p>Упасигосподьмаркетолог</p>
+                        <img src="team/TimurEgypt.png" alt="Team Member 3">
+                        <h3>Тимур</h3>
+                        <p>IT-специалист</p>
                     </div>
                     <div class="team-member">
-                        <img src="team/RogueRat.jpg" alt="Team Member 4">
-                        <h3>Серега Сиплый</h3>
-                        <p>Он просто хотел шарить, как все остальные шарят, но теперь никто не шарит так, как он шарит</p>
+                        <img src="team/Ilya.jpg" alt="Team Member 4">
+                        <h3>Илья</h3>
+                        <p>SMM-специалист</p>
                     </div>
                     <div class="team-member">
-                        <img src="team/BarbarianRat.jpg" alt="Team Member 5">
-                        <h3>Акакий Сибиряк</h3>
-                        <p>Складмен мудак</p>
-                    </div>
-                    <div class="team-member">
-                        <img src="team/BardRat.jpg" alt="Team Member 6">
-                        <h3>Марат Ростов</h3>
-                        <p>Продавец-на-дуде-игрец</p>
+                        <img src="team/Misha.jpg" alt="Team Member 5">
+                        <h3>Михаил</h3>
+                        <p>SMM-специалист</p>
                     </div>
                     <!-- Добавить больше участников -->
                 </div>
             </div>
         </section>
+        <section id="collection" class="collection-section">
+            <div class="container">
+                <h2>Коллекция</h2>
+                <div class="collection-grid">
+                    <div class="collection-item">
+                        <div class="collection-img">
+                            <img src="clothes/t-shirt Hysteria Front.jpg" alt="t-shirt Hysteria">
+                        </div>
+                        <h3>t-shirt Hysteria</h3>
+                        <p>бла бла бла</p>
+                    </div>
+                    <div class="collection-item">
+                        <div class="collection-img">
+                            <img src="clothes/t-shirt Prime Flow Front.jpg" alt="t-shirt Prime Flow">
+                        </div>
+                        <h3>t-shirt Prime Flow</h3>
+                        <p>бла бла бла</p>
+                    </div>
+                    <div class="collection-item">
+                        <div class="collection-img">
+                            <img src="clothes/t-shirt Spectral state Front.jpg" alt="t-shirt Spectral state">
+                        </div>
+                        <h3>t-shirt Spectral state</h3>
+                        <p>бла бла бла</p>
+                    </div>
+                    <div class="collection-item">
+                        <div class="collection-img">
+                            <img src="clothes/t-shirt The Elegant White Front.jpg" alt="t-shirt The Elegant White">
+                        </div>
+                        <h3>t-shirt The Elegant White</h3>
+                        <p>бла бла бла</p>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id="trust" class="trust-section">
             <div class="container">
-                <h2>Мнение о нас</h2>
+                <h2>Сообщество</h2>
                 <div class="reviews">
                     <blockquote>
                         <p>Отличная команда и интересный проект!</p>
@@ -120,6 +191,8 @@
                     </a>
                 </div>
             </section>
+            <hr>
+            <p>Все права защищены | 2024 | Сделано с любовью от разработчиков RCS Team</p>
         </div>
     </footer>
 </body>
