@@ -279,6 +279,22 @@ header nav ul li a:hover {
 
 /*-----------------------------*/
 
+.attention-section {
+    background: repeating-linear-gradient(-45deg,
+    rgb(0, 0, 0), rgb(0, 0, 0) 10px,
+    rgb(255, 166, 1) 10px, rgb(255, 166, 1) 20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.attention-section .container h2 {
+    background-color: #000000;
+    color: rgb(255, 166, 1);
+    text-align: center;
+    font-size: 5vw;
+}
+
 .collection-section {
     background: #e6e7e7;
     box-shadow: 0 0 10px #b6b6b6;
@@ -470,6 +486,10 @@ footer p {
 
 @media (max-width: 768px) {
 
+    header .container {
+        width: 100%;
+    }
+
     header .logo img {
         max-width: 70px;
     }
@@ -495,4 +515,24 @@ footer p {
         display: flex;
         flex-wrap: wrap;
     }
+}
+
+@media (max-width: 480px) {
+
+    header .logo h1 {
+        font-size: 1.3em;
+    }
+
+    header .logo img {
+        max-width: 70px;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-wrap: nowrap;
+        font-size: 0.8rem;
+    }
+
 }
