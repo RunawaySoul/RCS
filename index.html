@@ -17,7 +17,16 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#about">Коллекция</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <a href="#collection">Коллекция</a>
+                            <div class="dropdown-content">
+                                <a href="#">Одежда</a>
+                                <a href="#">Обувь</a>
+                                <a href="#">Аксессуары</a>
+                            </div>
+                        </div>
+                    </li>
                     <li><a href="#about">О проекте</a></li>
                     <li><a href="#team">О команде</a></li>
                     <li><a href="#trust">Доверие</a></li>
@@ -48,7 +57,7 @@
                     </div>
                     <div class="about-description">
                         <img src="icons/badge-color.png" alt="Our goal">
-                        <p>Простые линии, комфортные материалы и продуманный дизайн делают её выбором для активных и стильных людей</p>
+                        <p>Мы тщательно отбираем бренды, которые соответствуют нашим ценностям и стандартам качества</p>
                     </div>
                 </div>
             </div>
@@ -65,6 +74,7 @@
                     <div class="quote-form">
                         <h3>Присоединяйся к команде!</h3>
                         <input placeholder="Полное имя" type="text"/>
+                        <input placeholder="Место в команде" type="text"/>
                         <input placeholder="Email" type="email"/>
                         <input placeholder="Телефон" type="text"/>
                         <button>Отправить</button>
@@ -104,11 +114,6 @@
                 </div>
             </div>
         </section>
-        <section id="attention" class="attention-section">
-            <div class="container">
-                <h2>Attention! Repairs ahead!</h2>
-            </div>
-        </section>
         <section id="collection" class="collection-section">
             <div class="container">
                 <h2>Коллекция</h2>
@@ -117,29 +122,32 @@
                         <div class="collection-img">
                             <img src="clothes/t-shirt Hysteria Front.jpg" alt="t-shirt Hysteria">
                         </div>
-                        <h3>t-shirt Hysteria</h3>
-                        <p>бла бла бла</p>
+                        <div class="collection-item-swiper">
+                            
+                        </div>
+                        <h3>Футболка Hysteria</h3>
+                        <p>2269 ₽ <span>2869 ₽</span></p>
                     </div>
                     <div class="collection-item">
                         <div class="collection-img">
                             <img src="clothes/t-shirt Prime Flow Front.jpg" alt="t-shirt Prime Flow">
                         </div>
-                        <h3>t-shirt Prime Flow</h3>
-                        <p>бла бла бла</p>
+                        <h3>Футболка Prime Flow</h3>
+                        <p>2269 ₽ <span>2869 ₽</span></p>
                     </div>
                     <div class="collection-item">
                         <div class="collection-img">
                             <img src="clothes/t-shirt Spectral state Front.jpg" alt="t-shirt Spectral state">
                         </div>
-                        <h3>t-shirt Spectral state</h3>
-                        <p>бла бла бла</p>
+                        <h3>Футболка Spectral state</h3>
+                        <p>2269 ₽ <span>2869 ₽</span></p>
                     </div>
                     <div class="collection-item">
                         <div class="collection-img">
                             <img src="clothes/t-shirt The Elegant White Front.jpg" alt="t-shirt The Elegant White">
                         </div>
-                        <h3>t-shirt The Elegant White</h3>
-                        <p>бла бла бла</p>
+                        <h3>Футболка The Elegant White</h3>
+                        <p>2269 ₽ <span>2869 ₽</span></p>
                     </div>
                 </div>
             </div>
@@ -149,23 +157,37 @@
                 <h2>Сообщество</h2>
                 <div class="reviews">
                     <blockquote>
-                        <p>Отличная команда и интересный проект!</p>
-                        <p>— Анастасия</p>
+                        <div class="reviewer">
+                            <p class="reviewer-icon-word">Н</p>
+                            <p class="reviewer-name">Никита</p>
+                        </div>
+                        <p>RCS дал отличную возможность продвинуть собственный бренд одежды. </p>
                     </blockquote>
                     <blockquote>
-                        <p>Давно мечтал попасть в молодую команду единомышленников, полных смелых идей и дающих возможность проявить себя. Спасибо команде RCS!</p>
-                        <p>— Михаил</p>
+                        <div class="reviewer">
+                            <p class="reviewer-icon-word">М</p>
+                            <p class="reviewer-name">Михаил</p>
+                        </div>
+                        <p>Заказывал на свой страх и риск. Но все получилось отлично. Качество и цена на высоте. 👍</p>
                     </blockquote>
                 </div>
                 <div class="faq">
                     <h3>FAQ</h3>
                     <details>
-                        <summary>Как вступить в команду?</summary>
-                        <p>Напишите нам по указанным ниже контактам</p>
+                        <summary>Как оформить заказ?</summary>
+                        <p>Оформить заказ можно на сайте, добавив понравившийся товар в корзину и заказав его.</p>
                     </details>
                     <details>
-                        <summary>Как следить за новостями проекта и команды?</summary>
-                        <p>Наши соцсети указаны в разделе Контакты</p>
+                        <summary>Сколько времени занимает доставка?</summary>
+                        <p>Время доставки зависит от региона и может составлять от 1 до 7 дней.</p>
+                    </details>
+                    <details>
+                        <summary>Возможно ли сотрудничество и работа с вами?</summary>
+                        <p>Напишите нам и мы рассмотрим ваше предложение.</p>
+                    </details>
+                    <details>
+                        <summary>Какие коллекции планируете в будущем?</summary>
+                        <p>Всю актуальную информацию и анонсы новых коллекций вы можете найти в нашем социальных сетях VK, Telegram, Instagram (запрещенная в РФ) и Youtube.</p>
                     </details>
                 </div>
             </div>
