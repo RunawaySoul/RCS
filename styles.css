@@ -182,7 +182,7 @@ header nav ul li a:hover {
     justify-content: center;
     align-items: center;
     max-width: 2000px;
-    margin: 0 0;
+    margin: auto;
 }
 
 .about-section h2 {
