@@ -46,10 +46,10 @@ header {
 }
 
 header .container {
-    width: 90%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -81,7 +81,7 @@ header nav ul li a {
     color: #333;
     font-weight: bold;
     font-size: 1.1em;
-    padding: 0.5rem 1rem;
+    padding: 0.55rem 0.55rem;
     border-radius: 14px;
 }
 
@@ -101,7 +101,7 @@ header nav ul li a:hover {
     background-color: #ffffff;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
+    padding: 6px 12px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -109,6 +109,39 @@ header nav ul li a:hover {
     justify-content: center;
     flex-direction: column;
     text-align: center;
+}
+
+.profile-logged {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}
+
+.profile-logged .profile-icon {
+    color: #fff;
+    min-width: 65px;
+    width: 65px;
+    height: 65px;
+    background-color: #47B2E6;
+    background: url(user_icons/cat_on_apple.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    border-radius: 50%;
+    text-align: center;
+    font-style: normal;
+}
+
+.profile-logged .profile-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.profile-logged .profile-gmail {
+    font-size: 1rem;
+    font-weight: normal;
 }
 
 .welcome-section {
@@ -144,7 +177,6 @@ header nav ul li a:hover {
     background: #fff;
     box-shadow: 0 0 10px #b6b6b6;
     padding: 2rem;
-
     text-align: center;
     display: flex;
     justify-content: center;
@@ -155,8 +187,6 @@ header nav ul li a:hover {
 
 .about-section h2 {
     margin-bottom: 1rem;
-    border-top: solid 2px #b6b6b6;
-    border-bottom: solid 2px #b6b6b6;
 }
 
 .about-section p {
@@ -202,8 +232,6 @@ header nav ul li a:hover {
 .team-section h2 {
     text-align: center;
     margin-bottom: 1.5rem;
-    border-top: solid 2px #b6b6b6;
-    border-bottom: solid 2px #b6b6b6;
 }
 
 .team-section .team-grid {
@@ -268,6 +296,7 @@ header nav ul li a:hover {
     background: #ffffff;
     box-shadow: 0px 10px 10px -9px #b6b6b6;
     padding: 2rem;
+    padding-top: 0;
     margin: auto;
     margin-bottom: 32px;
 }
@@ -275,8 +304,6 @@ header nav ul li a:hover {
 .team-members-section h2 {
     text-align: center;
     margin-bottom: 1.5rem;
-    border-top: solid 2px #b6b6b6;
-    border-bottom: solid 2px #b6b6b6;
 }
 
 .team-members-section .description {
@@ -313,26 +340,39 @@ header nav ul li a:hover {
     border: 5px solid transparent;
 }
 
-/*-----------------------------*/
-
 .collection-section {
     background: #ffffff;
     box-shadow: 0 0 10px #b6b6b6;
     padding: 2rem;
     margin: auto;
     margin-bottom: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .collection-section h2 {
     text-align: center;
-    margin-bottom: 1.5rem;
-    border-top: solid 2px #b6b6b6;
-    border-bottom: solid 2px #b6b6b6;
+    margin-bottom: -3rem;
 }
 
 .collection-section h3 {
     text-align: center;
     margin-top: 10px;
+}
+
+.collection-section h4 {
+    text-align: center;
+    font-size: 10rem;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 14px;
+    text-shadow:
+    -2px -2px 0 black,
+    2px -2px 0 black,
+    -2px 2px 0 black,
+    2px 2px 0 black;
 }
 
 .collection-section p {
@@ -343,17 +383,44 @@ header nav ul li a:hover {
     text-decoration: line-through;
 }
 
+.collection-section .brand-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    margin: 100px 0;
+}
+
+.collection-section .shaori {
+    background-image: url(brands/shaori/logo/header_shaori.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 14px;
+    width: 100%;
+}
+
+.collection-section .rsvt {
+    background-image: url(brands/rsvt/logo/header_rsvt.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 14px;
+    width: 100%;
+}
+
 .collection-section .collection-grid {
     display: flex;
     gap: 2rem;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 60px;
 }
 
 .collection-section .collection-item {
     flex: 1 1 30%;
-    max-width: 350px;
-    min-width: 350px;
+    max-width: 400px;
+    min-width: 400px;
     text-align: center;
     text-transform: uppercase;
     font-size: 0.7rem;
@@ -366,26 +433,38 @@ header nav ul li a:hover {
 }
 
 .collection-section .collection-img {
-    max-width: 350px;
-    max-height: 350px;
+    max-height: 400px;
 }
 
-.collection-section .collection-item img {
+.collection-section .collection-item .front {
     object-fit: cover;
     background: #ffffff;
     width: auto;
     height: 100%;
-    min-width: 350px;
+    min-width: 400px;
     border-radius: 28px;
 }
 
-/*-----------------------------*/
+.collection-section .collection-item .back {
+    object-fit: cover;
+    background: #ffffff;
+    width: auto;
+    height: 100%;
+    min-width: 400px;
+    border-radius: 28px;
+}
 
 .trust-section {
     background: #fff;
     box-shadow: 0 0 10px #b6b6b6;
     padding: 2rem;
-    margin-bottom: 32px;
+}
+
+.trust-section .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .trust-section h2 {
@@ -393,12 +472,25 @@ header nav ul li a:hover {
     margin-bottom: 1.5rem;
 }
 
-.trust-section .reviews blockquote {
-    margin: 1rem 0;
+.trust-section h3 {
+    margin-bottom: 32px;
+}
+
+.trust-section .reviews-grid {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.trust-section .reviews-grid blockquote {
+    flex: 1 1 30%;
+    max-width: 400px;
+    min-width: 400px;
     color: #666;
     background: #f9f9f9;
     padding: 1rem;
-    border-left: 5px solid #ccc;
     border-radius: 28px;
     overflow: hidden;
 }
@@ -413,8 +505,8 @@ header nav ul li a:hover {
     color: #fff;
     width: 50px;
     height: 50px;
-    background: url(backgrounds/reviewer-back.png);
-    background-repeat: no-repeat;
+    background-color: #47B2E6;
+    border-radius: 50%;
     text-align: center;
     font-style: normal;
     padding-top: 11px;
@@ -423,29 +515,42 @@ header nav ul li a:hover {
 .trust-section .reviewer-name {
     margin-left: 16px;
     font-size: 1.2rem;
-    color:#000000;
+    font-weight: bold;
+    color:#3a3a3a;
+    padding-top: 2px;
 }
 
-.trust-section .faq {
-    margin-top: 2rem;
+.faq-section {
+    background: #fff;
+    box-shadow: 0px 10px 10px -9px #b6b6b6;
+    padding: 2rem;
+    padding-top: 0;
+    margin-bottom: 32px;
 }
 
-.trust-section .faq h3 {
+.faq-section .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.faq-section h3 {
     margin-bottom: 12px;
 }
 
-.trust-section details {
+.faq-section details {
     margin-bottom: 12px;
 }
 
-.trust-section .faq summary {
+.faq-section .faq summary {
     font-weight: bold;
     font-size: 1.3rem;
     cursor: pointer;
     margin-bottom: 8px;
 }
 
-.trust-section p {
+.faq-section p {
     font-size: 1.1rem;
     margin-left: 20px;
 }
@@ -500,25 +605,6 @@ footer p {
 
 /* Адаптивная верстка */
 @media (max-width: 1250px) {
-    
-    header .container {
-        display: block;
-        justify-content:baseline;
-        align-items: center;
-    }
-    
-    header .logo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 16px;
-    }
-
-    header nav {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 
     header nav ul {
         gap: 0;
@@ -546,10 +632,6 @@ footer p {
 
 @media (max-width: 768px) {
 
-    header .container {
-        width: 100%;
-    }
-
     header .logo img {
         max-width: 70px;
     }
@@ -558,7 +640,6 @@ footer p {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        text-wrap: nowrap;
     }
 
     .welcome-section .container h1 {
@@ -584,14 +665,11 @@ footer p {
     }
 
     header .logo img {
-        max-width: 70px;
+        max-width: 50px;
+        margin: 6px;
     }
 
     header nav ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        text-wrap: nowrap;
         font-size: 0.8rem;
     }
 

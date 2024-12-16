@@ -19,17 +19,23 @@
                 <ul>
                     <li>
                         <div class="dropdown">
-                            <a href="#collection">Коллекция</a>
+                            <a href="#profile">Профиль</a>
                             <div class="dropdown-content">
-                                <a href="#">Одежда</a>
-                                <a href="#">Обувь</a>
-                                <a href="#">Аксессуары</a>
+                                <a href="#">
+                                    <div class="profile-logged">
+                                            <p class="profile-icon"></p>
+                                            <p class="profile-name">Логачев Артём</p>
+                                            <p class="profile-gmail">lagachart5002@gmail.com</p>
+                                    </div>
+                                </a>
+                                <a href="#">Настройки</a>
                             </div>
                         </div>
                     </li>
+                    <li><a href="#collection">Коллекция</a></li>
                     <li><a href="#about">О проекте</a></li>
                     <li><a href="#team">О команде</a></li>
-                    <li><a href="#trust">Доверие</a></li>
+                    <li><a href="#trust">Сообщество</a></li>
                     <li><a href="#contacts">Контакты</a></li>
                 </ul>
             </nav>
@@ -117,37 +123,81 @@
         <section id="collection" class="collection-section">
             <div class="container">
                 <h2>Коллекция</h2>
+                <div class="brand-header">
+                    <div class="shaori">
+                        <h4>SHAORI</h4>
+                    </div>
+                </div>
                 <div class="collection-grid">
                     <div class="collection-item">
                         <div class="collection-img">
-                            <img src="clothes/t-shirt Hysteria Front.jpg" alt="t-shirt Hysteria">
-                        </div>
-                        <div class="collection-item-swiper">
-                            
+                            <img src="brands/shaori/clothes/t-shirt Hysteria Front.jpg" alt="t-shirt Hysteria" class="front">
                         </div>
                         <h3>Футболка Hysteria</h3>
                         <p>2269 ₽ <span>2869 ₽</span></p>
                     </div>
                     <div class="collection-item">
                         <div class="collection-img">
-                            <img src="clothes/t-shirt Prime Flow Front.jpg" alt="t-shirt Prime Flow">
+                            <img src="brands/shaori/clothes/t-shirt The Elegant White Front.jpg" alt="t-shirt The Elegant White" class="front">
+                        </div>
+                        <h3>Футболка The Elegant White</h3>
+                        <p>2269 ₽ <span>2869 ₽</span></p>
+                    </div>
+                    <div class="collection-item">
+                        <div class="collection-img">
+                            <img src="brands/shaori/clothes/t-shirt Prime Flow Front.jpg" alt="t-shirt Prime Flow" class="front">
                         </div>
                         <h3>Футболка Prime Flow</h3>
                         <p>2269 ₽ <span>2869 ₽</span></p>
                     </div>
                     <div class="collection-item">
                         <div class="collection-img">
-                            <img src="clothes/t-shirt Spectral state Front.jpg" alt="t-shirt Spectral state">
+                            <img src="brands/shaori/clothes/t-shirt Spectral state Front.jpg" alt="t-shirt Spectral state" class="front">
                         </div>
                         <h3>Футболка Spectral state</h3>
                         <p>2269 ₽ <span>2869 ₽</span></p>
                     </div>
+                </div>
+                <div class="brand-header">
+                    <div class="rsvt">
+                        <h4>RSVT</h4>
+                    </div>
+                </div>
+                <div class="collection-grid">
                     <div class="collection-item">
                         <div class="collection-img">
-                            <img src="clothes/t-shirt The Elegant White Front.jpg" alt="t-shirt The Elegant White">
+                            <img src="brands/rsvt/clothes/BASE LOGO.jpg" alt="t-shirt BASE LOGO" class="front">
                         </div>
-                        <h3>Футболка The Elegant White</h3>
+                        <h3>Футболка BASE LOGO</h3>
+                        <p>1459 ₽ <span>1859 ₽</span></p>
+                    </div>
+                    <div class="collection-item">
+                        <div class="collection-img">
+                            <img src="brands/rsvt/clothes/BLESSED.jpg" alt="t-shirt BLESSED" class="front">
+                        </div>
+                        <h3>Футболка BLESSED</h3>
+                        <p>1569 ₽ <span>1969 ₽</span></p>
+                    </div>
+                    <div class="collection-item">
+                        <div class="collection-img">
+                            <img src="brands/rsvt/clothes/GARDEN.jpg" alt="t-shirt GARDEN" class="front">
+                        </div>
+                        <h3>Футболка GARDEN</h3>
+                        <p>2469 ₽ <span>2969 ₽</span></p>
+                    </div>
+                    <div class="collection-item">
+                        <div class="collection-img">
+                            <img src="brands/rsvt/clothes/METAMOD VOL.1 RASSVET.jpg" alt="t-shirt RASSVET" class="front">
+                        </div>
+                        <h3>Футболка RASSVET</h3>
                         <p>2269 ₽ <span>2869 ₽</span></p>
+                    </div>
+                    <div class="collection-item">
+                        <div class="collection-img">
+                            <img src="brands/rsvt/clothes/METAMOD VOL.1 METAMODERNIST.jpg" alt="t-shirt METAMODERNIST" class="front">
+                        </div>
+                        <h3>Футболка METAMODERNIST</h3>
+                        <p>2319 ₽ <span>2599 ₽</span></p>
                     </div>
                 </div>
             </div>
@@ -155,7 +205,8 @@
         <section id="trust" class="trust-section">
             <div class="container">
                 <h2>Сообщество</h2>
-                <div class="reviews">
+                <h3>Отзывы</h3>
+                <div class="reviews-grid">
                     <blockquote>
                         <div class="reviewer">
                             <p class="reviewer-icon-word">Н</p>
@@ -170,12 +221,23 @@
                         </div>
                         <p>Заказывал на свой страх и риск. Но все получилось отлично. Качество и цена на высоте. 👍</p>
                     </blockquote>
+                    <blockquote>
+                        <div class="reviewer">
+                            <p class="reviewer-icon-word">А</p>
+                            <p class="reviewer-name">Анастасия</p>
+                        </div>
+                        <p>Заказывала футболку, хорошая. Очень приятные люди, ответили на все вопросы в чате в телеграмм. </p>
+                    </blockquote>
                 </div>
+            </div>
+        </section>
+        <section id="faq" class="faq-section">
+            <div class="container">
+                <h3>FAQ</h3>
                 <div class="faq">
-                    <h3>FAQ</h3>
                     <details>
                         <summary>Как оформить заказ?</summary>
-                        <p>Оформить заказ можно на сайте, добавив понравившийся товар в корзину и заказав его.</p>
+                        <p>Оформить заказ можно, выбрав понравившийся товар и написав нам в социальных сетях.</p>
                     </details>
                     <details>
                         <summary>Сколько времени занимает доставка?</summary>
