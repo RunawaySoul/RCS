@@ -387,7 +387,6 @@ header nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
     margin: 100px 0;
 }
 
@@ -415,6 +414,7 @@ header nav ul li a:hover {
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 60px;
+    
 }
 
 .collection-section .collection-item {
@@ -434,6 +434,7 @@ header nav ul li a:hover {
 
 .collection-section .collection-img {
     max-height: 400px;
+    
 }
 
 .collection-section .collection-item .front {
@@ -489,7 +490,7 @@ header nav ul li a:hover {
     max-width: 400px;
     min-width: 400px;
     color: #666;
-    background: #f9f9f9;
+    background: #ebebeb;
     padding: 1rem;
     border-radius: 28px;
     overflow: hidden;
@@ -655,6 +656,14 @@ footer p {
     .contact-section .social-icons {
         display: flex;
         flex-wrap: wrap;
+    }
+
+    .collection-section h4 {
+        font-size: 4rem;
+    }
+
+    .collection-section .brand-header {
+        margin: 32px 0;
     }
 }
 
